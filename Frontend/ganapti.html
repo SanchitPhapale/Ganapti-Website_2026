@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rupamata Mitra Mandal - Premium Ganesh Festival Platform. Daily Darshan, Events, Donations, Cultural Programs."
+    />
+    <meta
+      name="keywords"
+      content="Rupamata Mitra Mandal, Ganpati, Ganesh Festival, Ganesh Chaturthi, Bappa Morya, Pune"
+    />
+    <meta name="theme-color" content="#FF6B00" />
+    <meta
+      property="og:title"
+      content="Rupamata Mitra Mandal — Ganapati Bappa Morya"
+    />
+    <meta
+      property="og:description"
+      content="Premium Ganesh Festival Platform — Celebrating Bappa with devotion and grandeur."
+    />
+    <title>Rupamata Mitra Mandal | Ganpati Bappa Morya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cinzel:wght@400;600;700;900&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="ganapti.css" />
+  </head>
+  <body>
+    <!-- LOADER -->
+    <div id="loader" class="loader-overlay">
+      <div class="loader-content">
+        <div class="loader-ring-outer"></div>
+        <div class="loader-ring-inner"></div>
+        <div class="loader-core">
+          <div class="loader-om">ॐ</div>
+        </div>
+        <div class="loader-text">
+          <div class="loader-title">Rupamata Mitra Mandal</div>
+          <div class="loader-subtitle">Ganpati Bappa Morya</div>
+        </div>
+        <div class="loader-bar-wrap">
+          <div class="loader-bar" id="loaderBar"></div>
+        </div>
+        <div class="loader-pct" id="loaderPct">0%</div>
+      </div>
+      <div class="loader-flowers" id="loaderFlowers"></div>
+    </div>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="ann-bar" id="annBar">
+      <span class="ann-icon"><i class="fas fa-bell"></i></span>
+      <div class="ann-scroller">
+        <div class="ann-track" id="annTrack">
+          <span
+            >🙏 Ganpati Bappa Morya! Welcome to Rupamata Mitra Mandal — Est.
+            2010 |</span
+          >
+          <span
+            >🎺 Ganesh Chaturthi 2026 — September 14 | Grand Celebrations Begin
+            !</span
+          >
+          <span>📅 Daily Aarti: Morning 10:30 AM | Evening 7:30 PM |</span>
+          <span>🎁 Mahaprasad for 500 + devotees. All Welcome!</span>
+          <span>📞 Contact: +91 8625887795 | WhatsApp Available 24/7</span>
+          <span>🌸 Visarjan Procession — September 25, 2026 at 6:00 PM</span>
+          <span>💰 Online Donations Open — Scan QR code below or use UPI!</span>
+        </div>
+      </div>
+      <button class="ann-close" id="annClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-brand">
+          <div class="brand-om">ॐ</div>
+          <div class="brand-info">
+            <span class="brand-main">Rupamata Mitra Mandal</span>
+            <span class="brand-sub">Est. 2010 · Ganpati Bappa Morya</span>
+          </div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="nav-link"
+              >Finance <i class="fas fa-chevron-down fa-xs"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="#donations" class="dd-item"
+                ><i class="fas fa-hand-holding-heart"></i> Donations</a
+              >
+              <a href="#expenses" class="dd-item"
+                ><i class="fas fa-receipt"></i> Expenses</a
+              >
+              <a href="#financial" class="dd-item"
+                ><i class="fas fa-chart-pie"></i> Financial</a
+              >
+            </div>
+          </li>
+          <li><a href="#aarti" class="nav-link">Aarti</a></li>
+          <li><a href="#committee" class="nav-link">Committee</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-btn" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="#donate" class="btn-donate-nav"
+            >Donate <i class="fas fa-heart"></i
+          ></a>
+          <button class="hamburger" id="hamburger" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg-layer"></div>
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+      <div class="flower-container" id="flowerRain"></div>
+      <div class="hero-content">
+        <div class="hero-badge reveal-up delay-1">
+          🪔 Ganesh Chaturthi 2026 — Sep 14
+        </div>
+        <div class="hero-devanagari reveal-up delay-2">ॐ गणेशाय नमः</div>
+        <h1 class="hero-title reveal-up delay-3">
+          <span class="hero-title-en">Rupamata Mitra Mandal</span>
+          <span class="hero-title-mr">✨ रूपमाता मित्र मंडळ ✨</span>
+        </h1>
+        <p class="hero-desc reveal-up delay-4">
+          Experience the divine presence of Lord Ganesha — the remover of
+          obstacles and lord of new beginnings. Join us for 10 days of devotion,
+          culture, and community.
+        </p>
+        <div class="hero-btns reveal-up delay-5">
+          <a href="#donate" class="btn-glow"
+            >Donate Now <i class="fas fa-heart"></i
+          ></a>
+          <a href="#events" class="btn-glass"
+            >View Events <i class="fas fa-calendar"></i
+          ></a>
+        </div>
+        <div class="hero-stats reveal-up delay-6">
+          <div class="h-stat">
+            <span class="h-stat-num" data-count="15">0</span
+            ><span class="h-stat-lbl">Years Legacy</span>
+          </div>
+          <div class="h-stat-div"></div>
+          <div class="h-stat">
+            <span class="h-stat-num" data-count="100">0</span
+            ><span class="h-stat-lbl">Volunteers</span>
+          </div>
+          <div class="h-stat-div"></div>
+          <div class="h-stat">
+            <span class="h-stat-num" data-count="1000">0</span
+            ><span class="h-stat-lbl">Devotees</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll"><i class="fas fa-chevron-down"></i></div>
+      <div class="floating-diyas" id="floatingDiyas"></div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown" class="section countdown-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Mark Your Calendar</span>
+          <h2 class="sec-title">
+            Ganesh Chaturthi <span class="gold">2026</span>
+          </h2>
+          <p class="sec-desc">
+            September 14, 2026 — The Most Auspicious Day Awaits
+          </p>
+        </div>
+        <div class="countdown-wrap reveal-up">
+          <div class="cd-unit">
+            <div class="cd-num" id="cdDays">00</div>
+            <div class="cd-lbl">Days</div>
+          </div>
+          <div class="cd-colon">:</div>
+          <div class="cd-unit">
+            <div class="cd-num" id="cdHours">00</div>
+            <div class="cd-lbl">Hours</div>
+          </div>
+          <div class="cd-colon">:</div>
+          <div class="cd-unit">
+            <div class="cd-num" id="cdMins">00</div>
+            <div class="cd-lbl">Minutes</div>
+          </div>
+          <div class="cd-colon">:</div>
+          <div class="cd-unit">
+            <div class="cd-num" id="cdSecs">00</div>
+            <div class="cd-lbl">Seconds</div>
+          </div>
+        </div>
+        <div class="festival-prog reveal-up">
+          <div class="fp-row">
+            <span>Festival Preparation</span
+            ><span id="fpLabel">Counting Down</span>
+          </div>
+          <div class="fp-bar-bg">
+            <div class="fp-bar-fill" id="fpBar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAILY DARSHAN -->
+    <section id="darshan" class="section darshan-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Aaj Ka Darshan</span>
+          <h2 class="sec-title">Daily <span class="gold">Darshan</span></h2>
+        </div>
+        <div class="darshan-grid">
+          <div class="darshan-img-wrap reveal-left">
+            <div class="darshan-frame">
+              <img
+                src="image 1.jpg"
+                alt="Ganpati Darshan"
+                class="darshan-img"
+                loading="lazy"
+              />
+              <div class="darshan-halo"></div>
+              <div class="diya d-left">🪔</div>
+              <div class="diya d-right">🪔</div>
+              <div class="flower-ring"></div>
+            </div>
+          </div>
+          <div class="darshan-content reveal-right">
+            <div class="darshan-date-badge" id="darshanDate"></div>
+            <blockquote class="darshan-quote glass-card" id="dailyQuote">
+              विघ्नहर्ता, मंगलकर्ता, सुखकर्ता श्री गणेश — नमो नमः।
+            </blockquote>
+            <div class="aarti-timings glass-card">
+              <h3><i class="fas fa-bell"></i> Aarti Schedule</h3>
+              <div class="at-row">
+                <i class="fas fa-sun"></i><span>Morning Aarti</span
+                ><b>10:30 AM</b>
+              </div>
+
+              <div class="at-row">
+                <i class="fas fa-moon"></i><span>Evening Aarti</span
+                ><b>7:30 PM</b>
+              </div>
+            </div>
+            <div class="daily-blessing glass-card" id="dailyBlessing">
+              <i class="fas fa-pray"></i> May Lord Ganesha bless all devotees
+              with wisdom, prosperity, and happiness today.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Our Story</span>
+          <h2 class="sec-title">
+            About <span class="gold">Rupamata Mitra Mandal</span>
+          </h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p>
+              Founded in 2005, Rupamata Mitra Mandal has been a beacon of
+              devotion, culture, and community service in Savedi, Ahilyanagar.
+              For over 30 years, we have been celebrating Ganesh Chaturthi with
+              unmatched grandeur, bringing together thousands of devotees from
+              across the region.
+            </p>
+            <p>
+              Our mandal stands at the intersection of tradition and modernity —
+              preserving the sacred rituals while embracing innovation to create
+              a world-class celebration experience for every generation.
+            </p>
+            <div class="about-nums">
+              <div class="a-num">
+                <span class="a-n" data-count="15">0</span><span>Years</span>
+              </div>
+              <div class="a-num">
+                <span class="a-n" data-count="100">0</span><span>Members</span>
+              </div>
+              <div class="a-num">
+                <span class="a-n" data-count="1000">0</span
+                ><span>Devotees</span>
+              </div>
+              <div class="a-num">
+                <span class="a-n">₹25k+</span><span>Charity</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-cards reveal-right">
+            <div class="a-card glass-card">
+              <div class="a-card-icon">🏛️</div>
+              <h3>History</h3>
+              <p>
+                Established in 2010 by passionate youth, we have grown into one
+                of Pune's most respected Ganpati Mandals with a legacy of
+                excellence.
+              </p>
+            </div>
+            <div class="a-card glass-card">
+              <div class="a-card-icon">🌟</div>
+              <h3>Vision</h3>
+              <p>
+                A spiritually enriching, culturally vibrant, and socially
+                responsible Ganesh Festival experience for every devotee.
+              </p>
+            </div>
+            <div class="a-card glass-card">
+              <div class="a-card-icon">🎯</div>
+              <h3>Mission</h3>
+              <p>
+                Preserve tradition, promote culture, foster community bonds, and
+                serve society through the sacred celebration of Ganesh
+                Chaturthi.
+              </p>
+            </div>
+            <div class="a-card glass-card">
+              <div class="a-card-icon">💪</div>
+              <h3>Objectives</h3>
+              <p>
+                Organize grand celebrations, support local artists, conduct
+                charity drives, and inspire youth to connect with their cultural
+                roots.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FESTIVAL TIMELINE -->
+    <section id="timeline" class="section timeline-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">10 Days of Devotion</span>
+          <h2 class="sec-title">Festival <span class="gold">Timeline</span></h2>
+        </div>
+        <div class="tl-container">
+          <div class="tl-spine"></div>
+          <div class="tl-item left reveal-left">
+            <div class="tl-dot"><i class="fas fa-truck"></i></div>
+            <div class="tl-card glass-card">
+              <span class="tl-day">Day 1 · Sep 14</span>
+              <h3>Ganpati Sathapna</h3>
+              <p>
+                Grand procession bringing Lord Ganesha home with dhol, tasha,
+                and devotional songs through decorated streets.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item right reveal-right">
+            <div class="tl-dot"><i class="fas fa-utensils"></i></div>
+            <div class="tl-card glass-card">
+              <span class="tl-day">Day 5 · Aug 26</span>
+              <h3>Mahaprasad</h3>
+              <p>
+                Grand community feast for 100+ devotees serving authentic
+                traditional Maharashtrian cuisine.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item left reveal-left">
+            <div class="tl-dot"><i class="fas fa-music"></i></div>
+            <div class="tl-card glass-card">
+              <span class="tl-day">Days 7 - 9</span>
+              <h3>Cultural Programs</h3>
+              <p>
+                Classical dance, Games, Bhajan competitions, and performances by
+                acclaimed regional artists.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item right reveal-right">
+            <div class="tl-dot"><i class="fas fa-water"></i></div>
+            <div class="tl-card glass-card">
+              <span class="tl-day">Day 10 · Sep 25</span>
+              <h3>Visarjan</h3>
+              <p>
+                Grand farewell procession to the river with thousands of
+                devotees, dhol-tasha, flowers, and music.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item left reveal-left">
+          <div class="tl-dot"><i class="fas fa-bell"></i></div>
+          <div class="tl-card glass-card">
+            <span class="tl-day">Days 1–10 Daily</span>
+            <h3>Daily Aarti</h3>
+            <p>
+              Four-time daily Aarti with live bhajan performances and prasad
+              distribution to all devotees.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENT SCHEDULE -->
+    <section id="events" class="section events-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Complete Schedule</span>
+          <h2 class="sec-title">Event <span class="gold">Schedule</span></h2>
+        </div>
+        <div class="filter-bar reveal-up" id="eventsFilter">
+          <button class="fbtn active" data-filter="all">All Days</button>
+          <button class="fbtn" data-filter="1">Day 1</button>
+          <button class="fbtn" data-filter="5">Day 5</button>
+          <button class="fbtn" data-filter="7">Day 7 - 9</button>
+
+          <button class="fbtn" data-filter="10">Day 10</button>
+        </div>
+        <div class="events-grid" id="eventsGrid"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Visual Journey</span>
+          <h2 class="sec-title">Premium <span class="gold">Gallery</span></h2>
+        </div>
+        <div class="filter-bar reveal-up" id="galleryFilter">
+          <button class="fbtn active" data-filter="all">All</button>
+          <button class="fbtn" data-filter="darshan">Darshan</button>
+          <button class="fbtn" data-filter="aarti">Aarti</button>
+          <button class="fbtn" data-filter="cultural">Cultural</button>
+          <button class="fbtn" data-filter="procession">Procession</button>
+        </div>
+        <div class="masonry-grid" id="galleryGrid"></div>
+      </div>
+      <div class="lightbox" id="lightbox">
+        <div class="lb-backdrop" id="lbBackdrop"></div>
+        <button class="lb-close" id="lbClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <button class="lb-prev" id="lbPrev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lb-next" id="lbNext">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lb-content">
+          <img id="lbImg" src="" alt="" />
+          <div class="lb-cap" id="lbCap"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATIONS -->
+    <section id="donations" class="section donations-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Transparent Accounting</span>
+          <h2 class="sec-title">Donation <span class="gold">Tracker</span></h2>
+        </div>
+        <div class="table-controls reveal-up">
+          <div class="search-box">
+            <i class="fas fa-search"></i
+            ><input
+              type="text"
+              id="donorSearch"
+              placeholder="Search donor name..."
+              class="glass-input"
+            />
+          </div>
+          <select id="donorFilter" class="glass-select">
+            <option value="all">All Types</option>
+            <option value="Cash">Cash</option>
+            <option value="Online">Online</option>
+            <option value="Cheque">Cheque</option>
+          </select>
+          <select id="donorSort" class="glass-select">
+            <option value="amt-desc">Highest First</option>
+            <option value="amt-asc">Lowest First</option>
+            <option value="name">By Name</option>
+          </select>
+        </div>
+        <div class="table-scroll glass-card reveal-up">
+          <table class="data-table" id="donorTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Donor Name</th>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tbody id="donorBody"></tbody>
+          </table>
+        </div>
+        <div class="table-pager" id="donorPager"></div>
+      </div>
+    </section>
+
+    <!-- EXPENSES -->
+    <section id="expenses" class="section expenses-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Where Every Rupee Goes</span>
+          <h2 class="sec-title">
+            Expense <span class="gold">Management</span>
+          </h2>
+        </div>
+        <div class="expense-cats reveal-up" id="expenseCats"></div>
+        <div class="table-scroll glass-card reveal-up">
+          <table class="data-table" id="expenseTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Item / Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Vendor</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="expenseBody"></tbody>
+          </table>
+        </div>
+        <div class="chart-wrap reveal-up">
+          <canvas id="expChart" width="360" height="220"></canvas>
+          <div class="chart-legend" id="chartLegend"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINANCIAL DASHBOARD -->
+    <section id="financial" class="section financial-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Full Transparency</span>
+          <h2 class="sec-title">Finance <span class="gold">Dashboard</span></h2>
+        </div>
+        <div class="fin-grid reveal-up">
+          <div class="fin-card collection glass-card">
+            <div class="fin-icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <div class="fin-data">
+              <span class="fin-lbl">Total Collection</span
+              ><span class="fin-val" id="finTotal">₹0</span
+              ><span class="fin-chg positive"
+                ><i class="fas fa-arrow-up"></i> +12% from last year</span
+              >
+            </div>
+          </div>
+          <div class="fin-card expense glass-card">
+            <div class="fin-icon"><i class="fas fa-receipt"></i></div>
+            <div class="fin-data">
+              <span class="fin-lbl">Total Expenses</span
+              ><span class="fin-val" id="finExpense">₹0</span
+              ><span class="fin-chg neutral">Festival operations</span>
+            </div>
+          </div>
+          <div class="fin-card balance glass-card">
+            <div class="fin-icon"><i class="fas fa-piggy-bank"></i></div>
+            <div class="fin-data">
+              <span class="fin-lbl">Net Balance</span
+              ><span class="fin-val" id="finBalance">₹0</span
+              ><span class="fin-chg positive"
+                ><i class="fas fa-arrow-up"></i> Surplus available</span
+              >
+            </div>
+          </div>
+          <div class="fin-card donors glass-card">
+            <div class="fin-icon"><i class="fas fa-users"></i></div>
+            <div class="fin-data">
+              <span class="fin-lbl">Total Donors</span
+              ><span class="fin-val" id="finDonors">0</span
+              ><span class="fin-chg positive"
+                ><i class="fas fa-arrow-up"></i> This year</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATION PROGRESS -->
+    <section id="donate" class="section prog-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Help Us Reach Our Goal</span>
+          <h2 class="sec-title">Donation <span class="gold">Progress</span></h2>
+        </div>
+        <div class="prog-card glass-card reveal-up">
+          <div class="prog-amounts">
+            <div class="prog-raised">
+              <span class="prog-lbl">Raised</span
+              ><span class="prog-val" id="progRaised">₹0</span>
+            </div>
+            <div class="prog-goal">
+              <span class="prog-lbl">Goal</span
+              ><span class="prog-val">₹1,00,000</span>
+            </div>
+          </div>
+          <div class="prog-bar-bg">
+            <div class="prog-bar-fill" id="progBar"></div>
+            <span class="prog-pct" id="progPct">0%</span>
+          </div>
+          <p class="prog-msg">
+            Every contribution, big or small, helps make this festival a grand
+            celebration for the entire community.
+          </p>
+          <div class="prog-btns">
+            <a href="#qr-donate" class="btn-glow"
+              >Donate Online <i class="fas fa-qrcode"></i
+            ></a>
+            <a href="tel:+917300092727" class="btn-glass"
+              >Contact for Cash <i class="fas fa-phone"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QR DONATION -->
+    <section id="qr-donate" class="section qr-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Scan &amp; Pay Instantly</span>
+          <h2 class="sec-title">Online <span class="gold">Donation</span></h2>
+        </div>
+        <div class="qr-grid reveal-up">
+          <div class="qr-card glass-card">
+            <div class="qr-brand phonepe">
+              <i class="fas fa-mobile-alt"></i> PhonePe
+            </div>
+            <div class="qr-box">
+              <div class="qr-art" data-app="PhonePe"></div>
+            </div>
+            <div class="qr-upi">rupamata@y...</div>
+            <button class="btn-copy-upi" data-upi="rupamata@ybl">
+              <i class="fas fa-copy"></i> Copy UPI
+            </button>
+          </div>
+          <div class="qr-card glass-card qr-featured">
+            <span class="qr-recommended">Recommended</span>
+            <div class="qr-brand gpay"><i class="fab fa-google-pay"></i></div>
+            <div class="qr-box"><div class="qr-art" data-app="GPay"></div></div>
+            <div class="qr-upi">rupamata@ok...</div>
+            <button class="btn-copy-upi" data-upi="rupamata@oksbi">
+              <i class="fas fa-copy"></i> Copy UPI
+            </button>
+          </div>
+          <div class="qr-card glass-card">
+            <div class="qr-brand paytm">
+              <i class="fas fa-wallet"></i> Paytm
+            </div>
+            <div class="qr-box">
+              <div class="qr-art" data-app="Paytm"></div>
+            </div>
+            <div class="qr-upi">rupamata@pa....</div>
+            <button class="btn-copy-upi" data-upi="rupamata@paytm">
+              <i class="fas fa-copy"></i> Copy UPI
+            </button>
+          </div>
+        </div>
+        <div class="bank-card glass-card reveal-up">
+          <h3><i class="fas fa-university"></i> Bank Transfer Details</h3>
+          <div class="bank-info">
+            <div class="bank-row">
+              <span>Account Name</span><strong>Rupamata Mitra Mandal</strong>
+            </div>
+            <div class="bank-row">
+              <span>Bank</span><strong>State Bank of Mandal</strong>
+            </div>
+            <div class="bank-row">
+              <span>Account No.</span><strong>1234567xxxxx</strong>
+            </div>
+            <div class="bank-row">
+              <span>IFSC Code</span><strong>SBIN000xxx</strong>
+            </div>
+            <div class="bank-row">
+              <span>Branch</span><strong>Ahilyanagar Main Branch</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP CONTRIBUTORS -->
+    <section id="top-donors" class="section top-donors-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Hall of Fame</span>
+          <h2 class="sec-title">Top <span class="gold">Contributors</span></h2>
+        </div>
+        <div class="top-donors-grid" id="topDonorsGrid"></div>
+      </div>
+    </section>
+
+    <!-- AARTI COLLECTION -->
+    <section id="aarti" class="section aarti-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Devotional Songs</span>
+          <h2 class="sec-title">Aarti <span class="gold">Collection</span></h2>
+        </div>
+        <div class="aarti-grid" id="aartiGrid"></div>
+      </div>
+    </section>
+
+    <!-- DAILY MANTRA -->
+    <section id="mantra" class="section mantra-sec">
+      <div class="container">
+        <div class="mantra-card glass-card reveal-up">
+          <div class="mantra-deco left-deco"></div>
+          <div class="mantra-deco right-deco"></div>
+          <div class="mantra-tag"><i class="fas fa-om"></i> Daily Mantra</div>
+          <div class="mantra-sanskrit" id="mantraText">ॐ गं गणपतये नमः</div>
+          <div class="mantra-meaning" id="mantraMeaning">
+            Om Salutations to Ganesha. Remove all obstacles.
+          </div>
+          <div class="mantra-nav">
+            <div class="mantra-dots" id="mantraDots"></div>
+            <button class="btn-mantra" id="mantraNext">
+              Next Mantra <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMITTEE MEMBERS -->
+    <section id="committee" class="section committee-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Our Leadership</span>
+          <h2 class="sec-title">Committee <span class="gold">Members</span></h2>
+        </div>
+        <div class="committee-grid" id="committeeGrid"></div>
+      </div>
+    </section>
+
+    <!-- VOLUNTEER REGISTRATION -->
+    <section id="volunteer" class="section volunteer-sec">
+      <div class="container">
+        <div class="vol-grid">
+          <div class="vol-info reveal-left">
+            <div class="sec-header left-align">
+              <span class="sec-tag">Join The Family</span>
+              <h2 class="sec-title">
+                Volunteer <span class="gold">Registration</span>
+              </h2>
+              <p class="sec-desc">
+                Be part of something bigger. Join our family of dedicated
+                volunteers who make this festival magical year after year.
+              </p>
+            </div>
+            <div class="vol-perks">
+              <div class="perk">
+                <i class="fas fa-certificate"></i
+                ><span>Official Certificate</span>
+              </div>
+              <div class="perk">
+                <i class="fas fa-tshirt"></i><span>Mandal T-Shirt</span>
+              </div>
+              <div class="perk">
+                <i class="fas fa-utensils"></i><span>Free Meals Daily</span>
+              </div>
+              <div class="perk">
+                <i class="fas fa-star"></i><span>Recognition Award</span>
+              </div>
+            </div>
+            <div class="vol-img-wrap">
+              <img
+                src="https://images.pexels.com/photos/6647037/pexels-photo-6647037.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Volunteers"
+                class="vol-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="reveal-right">
+            <form class="reg-form glass-card" id="volunteerForm">
+              <h3><i class="fas fa-user-plus"></i> Join as Volunteer</h3>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label>Full Name *</label
+                  ><input
+                    type="text"
+                    name="name"
+                    placeholder="Your full name"
+                    required
+                    class="glass-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Mobile Number *</label
+                  ><input
+                    type="tel"
+                    name="mobile"
+                    placeholder="+91 XXXXX XXXXX"
+                    required
+                    class="glass-input"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label
+                ><input
+                  type="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  class="glass-input"
+                />
+              </div>
+              <div class="form-group">
+                <label>Preferred Role *</label>
+                <select name="role" required class="glass-select">
+                  <option value="">Choose a role</option>
+                  <option>Decoration Team</option>
+                  <option>Security Team</option>
+                  <option>Prasad Distribution</option>
+                  <option>Event Coordination</option>
+                  <option>Photography & Media</option>
+                  <option>First Aid Team</option>
+                  <option>Cleaning & Maintenance</option>
+                  <option>Welcome Desk</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Skills / Message</label
+                ><textarea
+                  name="message"
+                  rows="3"
+                  placeholder="Tell us about your skills..."
+                  class="glass-input"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-glow full-w">
+                Register Now <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETITION REGISTRATION -->
+    <section id="competitions" class="section comp-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Show Your Talent</span>
+          <h2 class="sec-title">
+            Competition <span class="gold">Registration</span>
+          </h2>
+        </div>
+        <div class="comp-grid" id="compGrid"></div>
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+    <section id="sponsors" class="section sponsors-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Our Supporters</span>
+          <h2 class="sec-title">Proud <span class="gold">Sponsors</span></h2>
+        </div>
+        <div class="sponsor-tier reveal-up">
+          <h3 class="tier-lbl gold-lbl">Platinum Sponsors</h3>
+          <div class="sponsor-row" id="platSponsors"></div>
+        </div>
+        <div class="sponsor-tier reveal-up">
+          <h3 class="tier-lbl">Gold Sponsors</h3>
+          <div class="sponsor-row" id="goldSponsors"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section id="community" class="section community-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Our Family</span>
+          <h2 class="sec-title">
+            Community <span class="gold">Highlights</span>
+          </h2>
+        </div>
+        <div class="community-grid" id="communityGrid"></div>
+      </div>
+    </section>
+
+    <!-- LIVE STREAMING -->
+    <section id="live" class="section live-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Watch From Home</span>
+          <h2 class="sec-title">Live <span class="gold">Streaming</span></h2>
+        </div>
+        <div class="live-grid reveal-up">
+          <div class="live-main glass-card">
+            <div class="live-badge"><span class="live-dot"></span> LIVE</div>
+            <div class="live-placeholder">
+              <i class="fab fa-youtube live-yt-icon"></i>
+              <h3>Live Aarti &amp; Darshan</h3>
+              <p>
+                Live streaming goes live during festival days<br />September 14
+                – September 25, 2026
+              </p>
+              <a
+                href="#"
+                class="btn-yt"
+                onclick="
+                  alert(
+                    'Live streaming will be available during the festival. Subscribe to our YouTube channel for notifications.',
+                  )
+                "
+                ><i class="fab fa-youtube"></i> Watch on YouTube</a
+              >
+            </div>
+          </div>
+          <div class="live-schedule">
+            <div class="ls-card glass-card">
+              <i class="fas fa-sun"></i>
+              <h4>Morning Aarti</h4>
+              <p>10:30 AM Daily</p>
+            </div>
+            <div class="ls-card glass-card">
+              <i class="fas fa-star"></i>
+              <h4>Afternoon Aarti</h4>
+              <p>12:00 PM Daily</p>
+            </div>
+            <div class="ls-card glass-card">
+              <i class="fas fa-moon"></i>
+              <h4>Evening Aarti</h4>
+              <p>7:30 PM Daily</p>
+            </div>
+            <div class="ls-card glass-card sub-card">
+              <i class="fab fa-youtube"></i>
+              <h4>Get Notified</h4>
+              <p>Subscribe for live alerts</p>
+              <a href="#" class="btn-yt-sm">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL GANPATI DIARY -->
+    <section id="diary" class="section diary-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Year-wise Archives</span>
+          <h2 class="sec-title">
+            Digital Ganpati <span class="gold">Diary</span>
+          </h2>
+        </div>
+        <div class="diary-tabs reveal-up" id="diaryTabs">
+          <button class="dtab active" data-year="2026">2026</button>
+          <button class="dtab" data-year="2025">2025</button>
+          <button class="dtab" data-year="2024">2024</button>
+        </div>
+        <div class="diary-gallery" id="diaryGallery"></div>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section id="map" class="section map-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Find Us</span>
+          <h2 class="sec-title">Our <span class="gold">Location</span></h2>
+        </div>
+        <div class="map-wrap reveal-up">
+          <div class="map-card glass-card">
+            <h3><i class="fas fa-map-marker-alt"></i> Rupamata Mitra Mandal</h3>
+            <p>Rupamatanagar, Savedi, Ahilyanagar- 411003</p>
+            <div class="map-btns">
+              <a
+                href="https://maps.google.com/?q=Rupamata Society Complex"
+                target="_blank"
+                rel="noopener"
+                class="btn-glow"
+                ><i class="fas fa-directions"></i> Directions</a
+              >
+              <a href="tel:+917300092727" class="btn-glass"
+                ><i class="fas fa-phone"></i> Call</a
+              >
+            </div>
+            <div class="map-info-rows">
+              <div class="mir">
+                <i class="fas fa-clock"></i
+                ><span>Darshan: 10:00 AM – 10:00 PM</span>
+              </div>
+              <div class="mir">
+                <i class="fas fa-parking"></i
+                ><span>Free Parking Available</span>
+              </div>
+              <div class="mir">
+                <i class="fas fa-bus"></i
+                ><span>PMPML Bus Route: 27, 48, 55</span>
+              </div>
+            </div>
+          </div>
+          <div class="map-iframe-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.61829085476!2d74.72111657525433!3d19.124394350451364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcba6535d37407%3A0x4907c833f89e1e3c!2sRupamata%20Society%20Complex!5e0!3m2!1sen!2sin!4v1779816119839!5m2!1sen!2sin"
+              allowfullscreen
+              loading="lazy"
+              title="Rupamata Mitra Mandal Location"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">Get In Touch</span>
+          <h2 class="sec-title">Contact <span class="gold">Us</span></h2>
+        </div>
+        <div class="contact-grid reveal-up">
+          <div class="contact-cards">
+            <a href="tel:+917300092727" class="contact-card glass-card"
+              ><i class="fas fa-phone-alt"></i>
+              <h4>Phone</h4>
+              <span>+91 7300092727</span></a
+            >
+            <a href="mailto:info@rupamata.org" class="contact-card glass-card"
+              ><i class="fas fa-envelope"></i>
+              <h4>Email</h4>
+              <span>info@rupamata.org</span></a
+            >
+            <a
+              href="https://wa.me/917300092727"
+              target="_blank"
+              rel="noopener"
+              class="contact-card glass-card whatsapp"
+              ><i class="fab fa-whatsapp"></i>
+              <h4>WhatsApp</h4>
+              <span>Chat Now</span></a
+            >
+            <div class="contact-card glass-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Address</h4>
+              <span>Rupamatanagar, Savedi, Ahilyanagar- 411003</span>
+            </div>
+          </div>
+          <form class="contact-form glass-card" id="contactForm">
+            <h3>Send a Message</h3>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Name</label
+                ><input
+                  type="text"
+                  name="name"
+                  placeholder="Full name"
+                  required
+                  class="glass-input"
+                />
+              </div>
+              <div class="form-group">
+                <label>Contact</label
+                ><input
+                  type="text"
+                  name="contact"
+                  placeholder="Phone / Email"
+                  class="glass-input"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label
+              ><input
+                type="text"
+                name="subject"
+                placeholder="How can we help?"
+                class="glass-input"
+              />
+            </div>
+            <div class="form-group">
+              <label>Message</label
+              ><textarea
+                name="message"
+                rows="4"
+                placeholder="Your message..."
+                class="glass-input"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-glow full-w">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        <div class="social-strip reveal-up">
+          <a href="#" class="soc-btn fb" title="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="soc-btn ig" title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="soc-btn yt" title="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://wa.me/917300092727"
+            target="_blank"
+            rel="noopener"
+            class="soc-btn wa"
+            title="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#" class="soc-btn tw" title="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMART FAQ -->
+    <section id="faq" class="section faq-sec">
+      <div class="container">
+        <div class="sec-header reveal-up">
+          <span class="sec-tag">AI Powered</span>
+          <h2 class="sec-title">
+            Frequently Asked <span class="gold">Questions</span>
+          </h2>
+        </div>
+        <div class="faq-search reveal-up">
+          <i class="fas fa-search"></i
+          ><input
+            type="text"
+            id="faqSearch"
+            placeholder="Search your question..."
+            class="glass-input"
+          />
+        </div>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <div class="footer-om">ॐ</div>
+                <div>
+                  <span class="footer-name">Rupamata Mitra Mandal</span
+                  ><span class="footer-est"
+                    >रूपमाता मित्र मंडळ · Since 2015</span
+                  >
+                </div>
+              </div>
+              <p class="footer-tagline">
+                Celebrating devotion, culture, and community for over 15 years.
+                Ganpati Bappa Morya!
+              </p>
+              <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a
+                ><a href="#"><i class="fab fa-instagram"></i></a
+                ><a href="#"><i class="fab fa-youtube"></i></a
+                ><a
+                  href="https://wa.me/917300092727"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#donations">Donations</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Festival</h4>
+              <ul>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#aarti">Aarti</a></li>
+                <li><a href="#darshan">Darshan</a></li>
+                <li><a href="#live">Live Stream</a></li>
+                <li><a href="#diary">Diary</a></li>
+                <li><a href="#volunteer">-By Volunteer</a></li>
+              </ul>
+            </div>
+            <div class="footer-col footer-contact-col">
+              <h4>Contact</h4>
+              <div class="fc-row">
+                <i class="fas fa-map-marker-alt"></i
+                ><span>Rupamatanagar, Savedi, Ahilyanagar – 411003</span>
+              </div>
+              <div class="fc-row">
+                <i class="fas fa-phone"></i
+                ><a href="tel:+917300092727">+91 7300092727</a>
+              </div>
+              <div class="fc-row">
+                <i class="fas fa-envelope"></i
+                ><a href="mailto:info@rupamata.org">info@rupamata.org</a>
+              </div>
+              <div class="fc-row">
+                <i class="fas fa-clock"></i
+                ><span>Open Daily 10 AM – 10 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            © 2026 Rupamata Mitra Mandal. Made with
+            <i class="fas fa-heart" style="color: #ff6b00"></i> for Bappa. All
+            rights reserved.
+          </p>
+          <p class="footer-mantra">
+            📿 Ganpati Bappa Morya · Mangal Murti Morya · Pudchya Varshi Lavkar
+            Ya 📿
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div class="chatbot" id="chatbot">
+      <div class="chat-window glass-card" id="chatWindow">
+        <div class="chat-head">
+          <div class="chat-avatar">🐘</div>
+          <div class="chat-meta">
+            <span class="chat-name">Ganesha </span
+            ><span class="chat-online"
+              ><span class="online-dot"></span>Online</span
+            >
+          </div>
+          <button class="chat-x" id="chatClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="chat-msgs" id="chatMsgs">
+          <div class="chat-bubble bot-bubble">
+            <div class="bubble-text">
+              🙏 Ganpati Bappa Morya! I'm your guider for Rupamata Mitra Mandal.
+              Ask me about aarti timings, events, donations, or anything about
+              our festival!
+            </div>
+          </div>
+        </div>
+        <div class="chat-chips" id="chatChips">
+          <button class="chip" data-q="Aarti timings">Aarti timings</button>
+          <button class="chip" data-q="How to donate?">How to donate?</button>
+          <button class="chip" data-q="Event schedule">Event schedule</button>
+          <button class="chip" data-q="Contact details">Contact details</button>
+        </div>
+        <div class="chat-input-row">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Ask Ganesha AI..."
+            class="chat-input"
+          />
+          <button id="chatSend" class="chat-send">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <button id="voiceBtn" class="chat-voice" title="Voice Input">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+      </div>
+      <button class="chat-toggle" id="chatToggle">
+        <span class="chat-icon-el">🐘</span
+        ><span class="chat-badge" id="chatBadge">1</span>
+      </button>
+    </div>
+
+    <!-- FLOATING ACTIONS -->
+    <div class="fab-group">
+      <a
+        href="https://wa.me/7300092727"
+        target="_blank"
+        rel="noopener"
+        class="fab wa-fab"
+        title="WhatsApp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+      <a href="tel:+917300092727" class="fab call-fab" title="Call"
+        ><i class="fas fa-phone"></i
+      ></a>
+    </div>
+    <button class="back-top" id="backTop" title="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- MOBILE BOTTOM NAV -->
+    <nav class="mob-nav" id="mobNav">
+      <a href="#home" class="mn-item active"
+        ><i class="fas fa-home"></i><span>Home</span></a
+      >
+      <a href="#events" class="mn-item"
+        ><i class="fas fa-calendar"></i><span>Events</span></a
+      >
+      <a href="#gallery" class="mn-item"
+        ><i class="fas fa-images"></i><span>Gallery</span></a
+      >
+      <a href="#donate" class="mn-item mn-donate"
+        ><i class="fas fa-heart"></i><span>Donate</span></a
+      >
+      <a href="#contact" class="mn-item"
+        ><i class="fas fa-phone"></i><span>Contact</span></a
+      >
+    </nav>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <script src="ganapti.js" defer></script>
+  </body>
+</html>
